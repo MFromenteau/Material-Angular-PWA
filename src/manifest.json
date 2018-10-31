@@ -1,7 +1,7 @@
 {
-  "name": "stuDIYFront",
-  "short_name": "stuDIYFront",
-  "theme_color": "#1976d2",
+  "name": "Material-Angular-PWA",
+  "short_name": "MAPWA",
+  "theme_color": "#3f51b5",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
