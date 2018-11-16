@@ -1,0 +1,23 @@
+.mat-toolbar {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .card-content-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .card-content-container > * {
+    width: 100%;
+  }
+  
+  .large-button {
+    width: 100%;
+  }
+  
+  .mat-card {
+    width: 75vh;
+  }

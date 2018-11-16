@@ -1,0 +1,32 @@
+<mat-grid-list cols="1" rowHeight="500px">
+    <mat-grid-tile >
+            <mat-card>
+                <mat-toolbar color="primary">
+                    <span>INFORMATIONS</span>
+                </mat-toolbar>
+                <mat-card-content>
+                    <div class="card-content-container">
+                        <mat-form-field>
+                            <input matInput placeholder="Email" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" required>
+                            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Firstname" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Lastname" required>
+                        </mat-form-field>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-flat-button class="large-button" color="primary">Register</button>
+                </mat-card-actions>
+            </mat-card>
+    </mat-grid-tile>
+        
+</mat-grid-list>
+
+
