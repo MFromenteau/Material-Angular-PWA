@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
-import { MatButtonModule, MatIconModule, MatListModule, MatCardModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatGridListModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { SharedModule } from '../shared/shared.module';
+import { Routes } from '@angular/router';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
+const routes: Routes = [
+  { path: '', component: SignupComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: SignupComponent },
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatFormFieldModule,
-    FormsModule,
-    MatInputModule,
-    MatGridListModule
+    SharedModule
   ],
   declarations: [LoginComponent, SignupComponent]
 })
