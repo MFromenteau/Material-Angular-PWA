@@ -8,8 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './user/login/login.component';
-import { SignupComponent } from './user/signup/signup.component';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from './shared/shared.module';
 
