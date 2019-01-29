@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CrudGenericService {
-  apiUrl = environment.apiBaseUrl;
+  baseUrl = environment.apiBaseUrl;
   controller: string;
   constructor(private http: HttpClient, controller: string) {
-    this.apiUrl += `/${controller}/`;
+    this.baseUrl += `/${controller}/`;
   }
 
   public getAll(): Observable<any> {
